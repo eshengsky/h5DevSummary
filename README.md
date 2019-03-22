@@ -5,7 +5,7 @@
 
 造成这一问题的原因是移动端对于 line-height 的处理不够统一。
 
-1. table布局
+* table布局
 ```html
 <div class="container"><div class="content">一些文字一些文字</div></div>
 .container {
@@ -18,7 +18,7 @@
 }
 ```
 
-1. flex布局
+* flex布局
 ```html
 <div class="content">一些文字一些文字</div>
 .content {
@@ -29,7 +29,7 @@
 }
 ```
 
-1. 不设置固定的line-height，通过padding撑高
+* 不设置固定的line-height，通过padding撑高
 ```html
 <div class="content">一些文字一些文字</div>
 .content {
