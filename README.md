@@ -5,19 +5,7 @@
 
 造成这一问题的原因是移动端对于 line-height 的处理不够统一。
 
-1. 缩放
-```html
-<div class="content">一些文字一些文字</div>
-.content {
-    height: 40px;
-    line-height: 40px;
-    font-size: 24px;
-    transform: scale(0.5);
-    transform-origin: 0% 0%;
-}
-```
-
-2. table布局
+1. table布局
 ```html
 <div class="container"><div class="content">一些文字一些文字</div></div>
 .container {
@@ -30,7 +18,7 @@
 }
 ```
 
-3. flex布局
+1. flex布局
 ```html
 <div class="content">一些文字一些文字</div>
 .content {
@@ -41,11 +29,11 @@
 }
 ```
 
-4. 不设置line-height，通过padding撑高
+1. 不设置固定的line-height，通过padding撑高
 ```html
 <div class="content">一些文字一些文字</div>
 .content {
-    line-height:normal; 
-    padding:6px 0; 
+    line-height: normal; 
+    padding: 6px 0; 
 }
 ```
